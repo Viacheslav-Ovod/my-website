@@ -1,265 +1,1950 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" style="scroll-behavior: smooth;">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Geographic</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            position: relative;
-            overflow-x: hidden;
-        }
-        a {
-            color: #ffc107;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #ffeb3b;
-        }
-        .header, .footer {
-            background-color: #000000;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .header img {
-            margin-right: 10px;
-        }
-        .menu {
-            margin-top: 10px;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background-color: #000000;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            border: 1px solid #ffc107;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
-            max-height: 0;
-            overflow: hidden;
-        }
-        .dropdown-content a {
-            color: #ffffff;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: #555;
-            color: #ffeb3b;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-            opacity: 1;
-            max-height: 500px;
-        }
-        .dropbtn {
-            font-size: 36px;
-            cursor: pointer;
-            color: #ffffff;
-            background: none;
-            border: none;
-            outline: none;
-        }
-        .content {
-            padding: 20px;
-            text-align: left;
-        }
-        .menu a {
-            margin: 0 15px;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .gallery div {
-            width: 30%;
-            margin: 10px;
-            background-color: #000000;
-            padding: 10px;
-            box-sizing: border-box;
-            transition: transform 0.3s ease;
-        }
-        .gallery div:hover {
-            transform: scale(1.05);
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .gallery p {
-            text-align: center;
-            font-size: 14px;
-            background-color: #000000;
-            margin: 0;
-            padding: 5px;
-        }
-        .video {
-            text-align: center;
-            margin: 20px 0;
-            background-color: #000000;
-            padding: 10px;
-        }
-        .video iframe {
-            width: 80%;
-            height: 450px;
-            border: none;
-            background-color: #000000;
-        }
-        .footer p {
-            color: #ffffff;
-            text-decoration: underline yellow;
-        }
-        @keyframes fall {
-            0% { transform: translateY(-100%) rotate(0deg); }
-            100% { transform: translateY(100vh) rotate(360deg); }
-        }
-        .leaf {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background: url('123.png') no-repeat center center;
-            background-size: contain;
-            animation: fall 10s linear infinite;
-            pointer-events: none;
-        }
-        .leaf:nth-child(2) {
-            left: 25%;
-            animation-duration: 12s;
-            width: 20px;
-            height: 20px;
-        }
-        .leaf:nth-child(3) {
-            left: 50%;
-            animation-duration: 14s;
-            width: 40px;
-            height: 40px;
-        }
-        .leaf:nth-child(4) {
-            left: 75%;
-            animation-duration: 16s;
-            width: 25px;
-            height: 25px;
-        }
-        .leaf:nth-child(5) {
-            left: 10%;
-            animation-duration: 18s;
-            width: 35px;
-            height: 35px;
-        }
-        .leaf:nth-child(6) {
-            left: 90%;
-            animation-duration: 20s;
-            width: 30px;
-            height: 30px;
-        }
-        .chat {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #000000;
-            border: 1px solid #ffc107;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            color: #ffffff;
-        }
-        .chat h3 {
-            margin: 0;
-            color: #ffc107;
-        }
-        .chat p {
-            margin: 5px 0 0;
-        }
-    </style>
+    <link rel="pingback" href="https://kurmanov.eu/xmlrpc.php">
+    <title>Alexander Kurmanov</title>
+    <meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" href="https://kurmanov.eu/en/home/" hreflang="en" />
+<link rel="alternate" href="https://kurmanov.eu/ru/home-ru/" hreflang="ru" />
+<link rel="alternate" href="https://kurmanov.eu/" hreflang="he" />
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//stackpath.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/kurmanov.eu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://kurmanov.eu/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://kurmanov.eu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts-css' href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&#038;family=Roboto:wght@100;300;400;500&#038;family=PT+Serif&#038;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css?ver=6.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css' href='https://kurmanov.eu/wp-content/themes/laika/style.css?ver=210421-40' type='text/css' media='all' />
+<link rel='stylesheet' id='style-2-css' href='https://kurmanov.eu/wp-content/themes/laika/src/style/css/style-2.css?ver=210421-50' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css' href='https://kurmanov.eu/wp-content/themes/laika/src/style/css/slick.css?ver=210421-2' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-css' href='https://kurmanov.eu/wp-content/themes/laika/src/style/css/slick-theme.css?ver=210421-2' type='text/css' media='all' />
+<link rel='stylesheet' id='normalize-css' href='https://kurmanov.eu/wp-content/themes/laika/src/style/css/normalize.css?ver=210421-2' type='text/css' media='all' />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js?ver=6.6.1" id="jquery-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js?ver=210421-2" id="vue.js-js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js?ver=6.6.1" id="bootstrap-5-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js?ver=6.6.1" id="magnific-js"></script>
+<link rel="https://api.w.org/" href="https://kurmanov.eu/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://kurmanov.eu/wp-json/wp/v2/pages/277" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kurmanov.eu/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.1" />
+<link rel="canonical" href="https://kurmanov.eu/ru/home-ru/" />
+<link rel='shortlink' href='https://kurmanov.eu/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://kurmanov.eu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkurmanov.eu%2Fru%2Fhome-ru%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://kurmanov.eu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkurmanov.eu%2Fru%2Fhome-ru%2F&#038;format=xml" />
+<link rel="icon" href="https://kurmanov.eu/wp-content/uploads/2021/04/favicon-1.png" sizes="32x32" />
+<link rel="icon" href="https://kurmanov.eu/wp-content/uploads/2021/04/favicon-1.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://kurmanov.eu/wp-content/uploads/2021/04/favicon-1.png" />
+<meta name="msapplication-TileImage" content="https://kurmanov.eu/wp-content/uploads/2021/04/favicon-1.png" />
 </head>
-<body>
-    <div class="leaf" style="left: 10%;"></div>
-    <div class="leaf" style="left: 25%;"></div>
-    <div class="leaf" style="left: 50%;"></div>
-    <div class="leaf" style="left: 75%;"></div>
-    <div class="leaf" style="left: 90%;"></div>
-    <div class="header">
-        <div style="display: flex; align-items: center;">
-            <img src="66d0115c90e3325a5372aeb37d0f1728.jpg" alt="National Geographic Logo" width="50" height="50">
-            <h1>National Geographic</h1>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-277">
+        <header>
+        <div class="container-lg d-flex justify-content-between">
+            <a class="header-logo" href="https://kurmanov.eu/ru/home-ru">
+                <img src="https://kurmanov.eu/wp-content/themes/laika/src/icons/logoup.svg" alt="">            </a>
+            <ul class="d-flex d-md-none align-items-center justify-content-end p-0 m-0 language-switch language-switch_mobile">
+                	<li class="lang-item lang-item-9 lang-item-en lang-item-first"><a  lang="en-US" hreflang="en-US" href="https://kurmanov.eu/en/home/">en</a></li>
+	<li class="lang-item lang-item-12 lang-item-ru current-lang"><a  lang="ru-RU" hreflang="ru-RU" href="https://kurmanov.eu/ru/home-ru/">ru</a></li>
+	<li class="lang-item lang-item-70 lang-item-he"><a  lang="he-IL" hreflang="he-IL" href="https://kurmanov.eu/">he</a></li>
+            </ul>
+            <button class="clickMenu icon_menu"></button>
+            <nav class="header-nav">
+                <div class="header_content">
+                    <div class="mobile-logo"><img src="https://kurmanov.eu/wp-content/themes/laika/src/icons/mobile-logo.svg" alt=""></div>                    <ul class="header-nav-menu">
+                        <li>
+                            <a href="https://kurmanov.eu/ru/portfolio/">Портфолио</a>                                                        <!-- <ul class="mobile-portfolio"> -->
+                            <ul class="mobile-portfolio"><li><a href="https://kurmanov.eu/type_sinema/promo-ru/">Промо видосы</a></li><li><a href="https://kurmanov.eu/type_sinema/love-ru/">Свадьбы и гулянки</a></li><li><a href="https://kurmanov.eu/type_sinema/corporate-ru/">Корпоративчики</a></li><li><a href="https://kurmanov.eu/type_sinema/child-ru/">ох уж эти школьные утренники</a></li><li><a href="https://kurmanov.eu/type_sinema/birthday-ru/">Чисто днюхи</a></li><li><a href="https://kurmanov.eu/type_sinema/event-ru/">Видео-Музня</a></li><li><a href="https://kurmanov.eu/type_sinema/food-ru/">И конечно же едааааааааа</a></li></ul>                        </li>
+                                                    <li>
+                                <a href="https://kurmanov.eu/ru/home-ru/#jacorAboutMe">Чисто обо мне</a>
+                            </li>
+                            <!-- 						<li>
+							<a href="https://kurmanov.eu/ru/home-ru/#jacorCalcPrice">Рассчитать стоимость</a>
+						</li> -->
+                            <li>
+                                <a href="https://kurmanov.eu/ru/home-ru/#jacorContact">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#showOrderCallback">Бегом набрал меня!</a>
+                            </li>
+                            <!-- 						<li>
+							<a class="calcLink" href="https://kurmanov.eu/ru/home-ru/#jacorCalcPrice">Расчитать стоимость</a>
+						</li> -->
+                                            </ul>
+                    <div class="d-lg-flex nav-phone">
+                        <ul class="d-flex align-items-center justify-content-end p-0 m-0 language-switch">
+                            	<li class="lang-item lang-item-9 lang-item-en lang-item-first"><a  lang="en-US" hreflang="en-US" href="https://kurmanov.eu/en/home/">en</a></li>
+	<li class="lang-item lang-item-12 lang-item-ru current-lang"><a  lang="ru-RU" hreflang="ru-RU" href="https://kurmanov.eu/ru/home-ru/">ru</a></li>
+	<li class="lang-item lang-item-70 lang-item-he"><a  lang="he-IL" hreflang="he-IL" href="https://kurmanov.eu/">he</a></li>
+                        </ul>
+                        <div class="d-flex flex-column align-items-end ">
+                            <a href="tel:+972509669545" class="nav-phone_tel">+972 50 966 9545</a> <a href="#showOrderCallback">Заказать звонок (1 минута разговора 100$) </a>                        </div>
+                    </div>
+                </div>
+                <div class="header_footer">
+                    <div class="header_contacts">
+                        <a class="num-ltr" href="tel:+972509669545">+972 50 966 9545</a>
+                        <a href="mailto: k-sash1983@yandex.ru">k-sash1983@yandex.ru</a>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://vk.com/alex_kurmanov" target="_blank"><img src="https://kurmanov.eu/wp-content/themes/laika/src/icons/vk.svg" alt=""></a></li>
+                            <li><a href="https://www.instagram.com/alex_kurmanov/" target="_blank"><img src="https://kurmanov.eu/wp-content/themes/laika/src/icons/inst.svg" alt=""></a></li>
+                            <li><a href="https://vimeo.com/user30852844/videos" target="_blank"><img src="https://kurmanov.eu/wp-content/themes/laika/src/icons/V.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="menu">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#photos">Photos</a>
-            <a href="#videos">Videos</a>
-            <a href="#magazine">Magazine</a>
-            <a href="#tv-shows">TV Shows</a>
-        </div>
-        <div class="dropdown" style="position: absolute; top: 20px; right: 20px;">
-            <button class="dropbtn">&#9776;</button>
-            <div class="dropdown-content">
-                <a href="#animals">Animals</a>
-                <a href="#environment">Environment</a>
-                <a href="#history-culture">History & Culture</a>
-                <a href="#science">Science</a>
-                <a href="#travel">Travel</a>
+    </header><main class="content">
+    <section class="intro">
+        <div class="container">
+                            <div class="intro_text_mobile">
+                    <h1 class="intro_name">Александр</h1>
+                    <h1 class="intro_surname">Курманов</h1>
+                    <h2>Видеограф</h2>
+                </div>
+                <div class="intro_text">
+                    <h1>Самый профессиональный<br /> видеограф в мире</h1>
+                    <a href="#showOrderCallback">Бегом оставил заявку</a>
+                </div>
+                        <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/alex_kurmanov/" target="_blank">
+                            <svg class="social-icon">
+                                <use href="https://kurmanov.eu/wp-content/themes/laika/src/icons/sprite.svg#instagram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/alex_kurmanov" target="_blank">
+                            <svg class="social-icon">
+                                <use href="https://kurmanov.eu/wp-content/themes/laika/src/icons/sprite.svg#vk-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vimeo.com/user30852844/videos" target="_blank">
+                            <svg class="social-icon">
+                                <use href="https://kurmanov.eu/wp-content/themes/laika/src/icons/sprite.svg#vimeo-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="content">
-        <h2>Welcome to National Geographic</h2>
-        <p>This is a sample page replicating the structure and style of National Geographic website.</p>
-        <div class="gallery">
-            <div>
-                <img src="DALL·E 2023-11-23 19.54.30 - A high-resolution, sharp, and deeply detailed wide-angle image in a 16_9 aspect ratio, featuring a close-up of a 40-year-old Indian man, with the phot.png" alt="Image 1">
-                <p>A coal miner with a weathered face and deep, expressive eyes.</p>
+    </section>
+    <section class=main>
+        <div class="container">
+            <div class="kurmanov-portfolio ">
+                <h1 class="title">Ох ща будет</h1>
+                                <div class="grid-wrap ">
+                                                                                <a href="https://kurmanov.eu/type_sinema/promo-ru/" class="image1">
+                                    <img src="https://kurmanov.eu/wp-content/themes/laika/src/image/image1.jpg" alt="">
+                                    <h2 class="title">Промо ролики</h2>
+                                </a>
+                                                                                                                <a href="https://kurmanov.eu/type_sinema/love-ru/" class="image6">
+                                    <img src="https://kurmanov.eu/wp-content/themes/laika/src/image/image6.jpg" alt="">
+                                    <h2 class="title">Свадьбы и Love Story</h2>
+                                </a>
+                                                                                                                <a href="https://kurmanov.eu/type_sinema/corporate-ru/" class="image2">
+                                    <img src="https://kurmanov.eu/wp-content/themes/laika/src/image/image2.jpg" alt="">
+                                    <h2 class="title">Корпоративные мероприятия</h2>
+                                </a>
+                                                                                                                <a href="https://kurmanov.eu/type_sinema/child-ru/" class="image4">
+                                    <img src="https://kurmanov.eu/wp-content/themes/laika/src/image/image4.jpg" alt="">
+                                    <h2 class="title">Школьные выпускные и детские утренники</h2>
+                                </a>
+                                                                                                                <a href="https://kurmanov.eu/type_sinema/birthday-ru/" class="image5">
+                                    <img src="https://kurmanov.eu/wp-content/themes/laika/src/image/image5.jpg" alt="">
+                                    <h2 class="title">Дни рождения и юбилеи</h2>
+                                </a>
+                                                                                                                <a href="https://kurmanov.eu/type_sinema/event-ru/" class="image3">
+                                    <img src="https://kurmanov.eu/wp-content/themes/laika/src/image/image3.jpg" alt="">
+                                    <h2 class="title">Музыкальные клипы</h2>
+                                </a>
+                                                                                                                <a href="https://kurmanov.eu/type_sinema/food-ru/" class="image7">
+                                    <img src="https://kurmanov.eu/wp-content/themes/laika/src/image/image8.jpg">
+                                    <h2 class="title">Food-съёмка</h2>
+                                </a>
+                                                                        
+                </div>
             </div>
-            <div>
-                <img src="DALL·E 2023-11-23 19.53.37 - A high-quality, high-resolution wide-angle image in a 16_9 aspect ratio, styled as a natural photograph taken with an 8K resolution camera, featuring .png" alt="Image 2">
-                <p>A majestic jaguar resting on a moss-covered branch in a dense jungle.</p>
-            </div>
-            <div>
-                <img src="DALL·E 2023-11-23 19.53.03 - A high-quality, high-resolution wide-angle image in a 16_9 aspect ratio, styled as a natural photograph taken with an 8K resolution camera, depicting .png" alt="Image 3">
-                <p>An intricate honeycomb structure with bees busy at work.</p>
-            </div>
-            <div>
-                <img src="DALL·E 2023-11-23 19.52.59 - A high-quality, high-resolution wide-angle image in a 16_9 aspect ratio, styled as a natural photograph taken with an 8K resolution camera, depicting .png" alt="Image 4">
-                <p>Bees swarming around a glowing, golden hive.</p>
-            </div>
-            <div>
-                <img src="DALL·E 2023-11-23 19.52.32 - A high-quality, high-resolution wide-angle image in a 16_9 aspect ratio, styled as a natural photograph taken with an 8K resolution camera, featuring .png" alt="Image 5">
-                <p>A portrait of a young woman with freckles and a direct gaze.</p>
-            </div>
-            <div>
-                <img src="DALL·E 2023-11-23 19.50.20 - A high-quality, high-resolution wide-angle image in a 16_9 aspect ratio, styled as a natural photograph taken with an 8K resolution camera, depicting .png" alt="Image 6">
-                <p>A tribal family cooking fish by the beach, surrounded by lush greenery.</p>
+                        <div class="about-me" id="jacorAboutMe">
+                <h2 class="title-mobile">Обо мне</h2>
+                <div class="img-avatar">
+                    <img src="https://kurmanov.eu/wp-content/themes/laika/src/image/avatar.jpg" alt="">
+                </div>
+                <div class="content-block">
+                    <h2 class="title">Обо мне</h2>
+                    <div class="description">
+                        <p>Александр Курманов — самый профессиональный видеооператор в мире! Каким бы ни было ваше мероприятие, моя задача  превратить это в продукт от NETFLIX. Я возглавляю ассоциацию фотографов при ООН, консультирую разные правительства по предоставлению видеокрейтерских услуг на инагурациях, являюсь членом почетного ордена при Ватикане, и лично научил Папу Римского монтажить на телефоне.</p>
+                    </div>
+                    <ul class="achive">
+                        <li class="item">
+                            <span class="num">10 +</span>
+                            <div class="text">
+                                лет опыта работы                            </div>
+                        </li>
+                        <li class="item">
+                            <span class="num">1 000 +</span>
+                            <div class="text">
+                                отснятых видеороликов                            </div>
+                        </li>
+                        <li class="item">
+                            <span class="num">10 000 +</span>
+                            <div class="text">
+                                часов занятия сьемкой                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/SQBu7w2hDac?autoplay=1&loop=1&playlist=SQBu7w2hDac" allow="autoplay" allowfullscreen></iframe>
-            <p>Watch this incredible video on the beauty of our natural world.</p>
+
+        <!-- Моё, не трогать -->
+        <div class="calc d-none" id="jacorCalcPrice">
+            <h1 class="title container">Рассчитать стоимость съёмки</h1>            <div class="wrap-form">
+                <div class="container">
+                    <div class="align-wrap">
+                        <!-- Контейнер для vue компанентов  -->
+
+                        <div id="dynamic-component-demo">
+
+                            <div class="left_b">
+                                <label>Выберите тип мероприятия</label>
+                                <div class="accordion-content">
+                                    <div class="accordion-panel">
+                                        <div class="accordion-panel-heading">
+                                            <div class="select-prevent">
+                                                Выбрать
+                                            </div>
+                                        </div>
+                                        <div class="accordion-panel-collapse" style="display: none;">
+                                            <ul>
+                                                <li v-for="tab in tabs" v-bind:key="tab.index" v-bind:class="['type', { active: currentTab.index === tab.index }]" v-on:click="currentTab = tab">{{ tab.name }}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Динамический калькулятор на Vue -->
+                                <keep-alive>
+                                    <component v-bind:is="currentTabComponent"></component>
+                                </keep-alive>
+                            </div>
+                                                                                    <div class="right_b" v-show="currentTab.index !== 0">
+                                <div class="wrapper-right">
+                                    <p class="wpcf7-contact-form-not-found"><strong>Ошибка:</strong> Контактная форма не найдена.</p>                                </div>
+                            </div>
+                            <script>
+                                Vue.component("tab-1", {
+                                    data: function() {
+                                        return {
+                                            product_time: ["В день мероприятия (SDE)", "4-6 месяцев (FILM)"],
+                                            count_camera: [{
+                                                id: "radio-1",
+                                                value: "Одна"
+                                            }, {
+                                                id: "radio-2",
+                                                value: "Две"
+                                            }],
+                                            shooting: ["4-5 часов", "10 часов", "12 часов"],
+                                            price_list: [{
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "4-5 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '20 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "10 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '23 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "12 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "4-5 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '28 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "10 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '32 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "12 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '35 000 руб'
+                                                },
+                                                {
+                                                    timings: "4-6 месяцев (FILM)",
+                                                    countCamera: "Одна",
+                                                    sinema: "4-5 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '15 000 руб'
+                                                },
+                                                {
+                                                    timings: "4-6 месяцев (FILM)",
+                                                    countCamera: "Одна",
+                                                    sinema: "10 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '27 000 руб'
+                                                },
+                                                {
+                                                    timings: "4-6 месяцев (FILM)",
+                                                    countCamera: "Одна",
+                                                    sinema: "12 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '30 000 руб'
+                                                },
+                                                {
+                                                    timings: "4-6 месяцев (FILM)",
+                                                    countCamera: "Две",
+                                                    sinema: "4-5 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "4-6 месяцев (FILM)",
+                                                    countCamera: "Две",
+                                                    sinema: "10 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '35 000 руб'
+                                                },
+                                                {
+                                                    timings: "4-6 месяцев (FILM)",
+                                                    countCamera: "Две",
+                                                    sinema: "12 часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '40 000 руб'
+                                                }
+                                            ],
+                                            resultCalc: {
+                                                timings: "",
+                                                countCamera: "Одна",
+                                                sinema: "",
+                                                places: "",
+                                                typeSinema: ""
+                                            },
+                                            index: 1
+                                        };
+                                    },
+                                    template: `
+                                                                <div class="wrapper-total">    
+                                                                    <div class="wrapper-left"> 
+                                                                        <div class="accordion-content-timings">
+                                                                            <div class="accordion-panel-timings">
+                                                                                <h1 class="title">Сроки изготовления</h1>
+                                                                                <div class="accordion-panel-heading-timings" v-on:click="slideToggleTime">
+                                                                                    <div class="select-prevent-timings">
+                                                                                        Выбрать
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="accordion-panel-collapse-timings " style="display:none;">
+                                                                                        <ul>                                                
+                                                                                            <li
+                                                                                                v-for="time in product_time"
+                                                                                                v-bind:class="['item-timework']"
+                                                                                                v-bind:key="time"
+                                                                                                v-on:click="selectTimings"
+                                                                                            >{{ time }}</li>
+                                                                                        </ul>
+                                                                                </div>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="set-radio-btn">
+                                                                            <h1 class="title">Количество камер</h1>
+                                                                            <ul class="wrap-radios">
+                                                                                <li 
+                                                                                    v-for="radio in count_camera"
+                                                                                    v-bind:class="['form_radio']"
+                                                                                >
+                                                                                    <input v-if="radio.value === 'Одна'" v-bind:id=radio.id type="radio" name="count-camera" checked v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                    <input v-else v-bind:id=radio.id type="radio" name="count-camera" v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                    <label v-bind:for=radio.id>{{ radio.value }}</label>
+                                                                                </li> 
+                                                                            </ul>                                             
+                                                                        </div>
+                                                                        <div class="accordion-content-sinema">
+                                                                            <h1 class="title">Время съёмки</h1>
+                                                                            <div class="accordion-panel-sinema">
+                                                                                <div class="accordion-panel-heading-sinema" v-on:click="slideToggleSinema">
+                                                                                    <div class="select-prevent-sinema">
+                                                                                        Выбрать
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="accordion-panel-collapse-sinema " style="display:none;">
+                                                                                        <ul>                                                
+                                                                                            <li
+                                                                                                v-for="delay in shooting"
+                                                                                                v-bind:class="['item-sinema']"
+                                                                                                v-bind:key="delay"
+                                                                                                v-on:click="selectSinema"
+                                                                                            >{{ delay }}</li>
+                                                                                        </ul>
+                                                                                </div>
+                                                                            </div>  
+                                                                        </div>                                                                   
+                                                                    </div>                                                                    
+                                                                </div>
+                                                                `,
+                                    methods: {
+                                        // handlerPrice : function (event) {
+                                        //     // console.log(element.timings);
+                                        //     this.price_list.forEach(element => {
+
+                                        //         if(this.resultCalc.timings === element.timings && this.resultCalc.countCamera === element.countCamera && this.resultCalc.sinema === element.sinema){
+                                        //             console.log(element.totalPrice);
+                                        //         } else {
+                                        //             console.log(false);
+                                        //         }
+                                        //     });
+                                        // },
+                                        slideToggleTime: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-timings").parent(".accordion-panel-timings").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-timings").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-timings").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        slideToggleSinema: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-sinema").parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        checkCamera: function(event) {
+                                            $('input[name="count-sinema-event"]').attr("value", $(event.path[0]).val());
+                                            this.resultCalc.countCamera = $(event.path[0]).val();
+                                        },
+                                        selectTimings: function(event) {
+                                            let accordionHeadingTimings = document.querySelector(
+                                                ".accordion-panel-heading-timings .select-prevent-timings"
+                                            );
+                                            accordionHeadingTimings.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingTimings.style = "color:#000";
+                                            document.querySelector("input[name='time-delay-event']").value =
+                                                accordionHeadingTimings.innerHTML;
+                                            this.resultCalc.timings = accordionHeadingTimings.innerHTML;
+                                            $(".accordion-panel-heading-timings")
+                                                .parent(".accordion-panel-timings")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-timings").toggleClass("in").next().slideToggle();
+                                        },
+                                        selectSinema: function(event) {
+                                            let accordionHeadingSinema = document.querySelector(
+                                                ".accordion-panel-heading-sinema .select-prevent-sinema"
+                                            );
+                                            accordionHeadingSinema.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingSinema.style = "color:#000";
+                                            document.querySelector("input[name='shooting-time-event']").value =
+                                                accordionHeadingSinema.innerHTML;
+                                            this.resultCalc.sinema = accordionHeadingSinema.innerHTML;
+                                            $(".accordion-panel-heading-sinema")
+                                                .parent(".accordion-panel-sinema")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                        }
+                                    }
+                                });
+
+                                Vue.component("tab-2", {
+                                    data: function() {
+                                        return {
+                                            product_time: ["В день мероприятия (SDE)", "1-2 месяцa"],
+                                            count_camera: [{
+                                                id: "radio-1",
+                                                value: "Одна"
+                                            }, {
+                                                id: "radio-2",
+                                                value: "Две"
+                                            }],
+                                            shooting: ["1-2 часa", "3-4 часа", "5 и более часов"],
+                                            price_list: [{
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "1-2 часa",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '20 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "3-4 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "5 и более часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: 'от 30 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "1-2 часa",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "3-4 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '30 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "5 и более часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: 'от 35 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяцa",
+                                                    countCamera: "Одна",
+                                                    sinema: "1-2 часa",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '14 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяцa",
+                                                    countCamera: "Одна",
+                                                    sinema: "3-4 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '18 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяцa",
+                                                    countCamera: "Одна",
+                                                    sinema: "5 и более часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: 'от 23 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяцa",
+                                                    countCamera: "Две",
+                                                    sinema: "1-2 часa",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '20 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяцa",
+                                                    countCamera: "Две",
+                                                    sinema: "3-4 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяцa",
+                                                    countCamera: "Две",
+                                                    sinema: "5 и более часов",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: 'от 30 000 руб'
+                                                }
+                                            ],
+                                            resultCalc: {
+                                                timings: "",
+                                                countCamera: "Одна",
+                                                sinema: "",
+                                                places: "",
+                                                typeSinema: ""
+                                            },
+                                            index: 2
+                                        };
+                                    },
+                                    template: `
+                                                                <div>     
+                                                                    <div class="accordion-content-timings">
+                                                                        <div class="accordion-panel-timings">
+                                                                            <h1 class="title">Сроки изготовления</h1>
+                                                                            <div class="accordion-panel-heading-timings" v-on:click="slideToggleTime">
+                                                                                <div class="select-prevent-timings">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-timings " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="time in product_time"
+                                                                                            v-bind:class="['item-timework']"
+                                                                                            v-bind:key="time"
+                                                                                            v-on:click="selectTimings"
+                                                                                        >{{ time }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                    <div class="set-radio-btn">
+                                                                        <h1 class="title">Количество камер</h1>
+                                                                        <ul class="wrap-radios">
+                                                                            <li 
+                                                                                v-for="radio in count_camera"
+                                                                                v-bind:class="['form_radio']">
+                                                                                <input v-if="radio.value === 'Одна'" v-bind:id=radio.id type="radio" name="count-camera" checked v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <input v-else v-bind:id=radio.id type="radio" name="count-camera" v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <label v-bind:for=radio.id>{{ radio.value }}</label>
+                                                                            </li>     
+
+                                                                        </ul>                                                
+                                                                    </div>
+                                                                    <div class="accordion-content-sinema">
+                                                                        <h1 class="title">Время съёмки</h1>
+                                                                        <div class="accordion-panel-sinema">
+                                                                            <div class="accordion-panel-heading-sinema" v-on:click="slideToggleSinema">
+                                                                                <div class="select-prevent-sinema">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-sinema " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="delay in shooting"
+                                                                                            v-bind:class="['item-sinema']"
+                                                                                            v-bind:key="delay"
+                                                                                            v-on:click="selectSinema"
+                                                                                        >{{ delay }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                </div>
+                                                                `,
+                                    methods: {
+                                        slideToggleTime: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-timings").parent(".accordion-panel-timings").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-timings").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-timings").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        slideToggleSinema: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-sinema").parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        checkCamera: function(event) {
+                                            $('input[name="count-sinema-event"]').attr("value", $(event.path[0]).val());
+                                            this.resultCalc.countCamera = $(event.path[0]).val();
+                                            // console.log($(event.path[0]).val());
+                                        },
+                                        selectTimings: function(event) {
+                                            let accordionHeadingTimings = document.querySelector(
+                                                ".accordion-panel-heading-timings .select-prevent-timings"
+                                            );
+                                            accordionHeadingTimings.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingTimings.style = "color:#000";
+                                            document.querySelector("input[name='time-delay-event']").value =
+                                                accordionHeadingTimings.innerHTML;
+                                            this.resultCalc.timings = accordionHeadingTimings.innerHTML;
+                                            $(".accordion-panel-heading-timings")
+                                                .parent(".accordion-panel-timings")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-timings").toggleClass("in").next().slideToggle();
+                                        },
+                                        selectSinema: function(event) {
+                                            let accordionHeadingSinema = document.querySelector(
+                                                ".accordion-panel-heading-sinema .select-prevent-sinema"
+                                            );
+                                            accordionHeadingSinema.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingSinema.style = "color:#000";
+                                            document.querySelector("input[name='shooting-time-event']").value =
+                                                accordionHeadingSinema.innerHTML;
+                                            this.resultCalc.sinema = accordionHeadingSinema.innerHTML;
+                                            $(".accordion-panel-heading-sinema")
+                                                .parent(".accordion-panel-sinema")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                        }
+                                    }
+                                });
+
+                                Vue.component("tab-3", {
+                                    data: function() {
+                                        return {
+                                            product_time: ["1 неделя", "2-3 недели", "1 месяц"],
+                                            count_camera: [{
+                                                id: "radio-1",
+                                                value: "Одна"
+                                            }, {
+                                                id: "radio-2",
+                                                value: "Две"
+                                            }, {
+                                                id: "radio-3",
+                                                value: "Три"
+                                            }],
+                                            shooting: ["1-2 часа", "3-4 часа", "5 и более часов"],
+                                            time_study: ["30 сек - 1 мин", "1 - 2 мин", "4 - 5 мин", "10 мин и более"],
+                                            doption: [{
+                                                id: "dop-option-1",
+                                                label: "Сценарий"
+                                            }, {
+                                                id: "dop-option-2",
+                                                label: "Раскадровка"
+                                            }, {
+                                                id: "dop-option-3",
+                                                label: "Текст"
+                                            }, {
+                                                id: "dop-option-4",
+                                                label: "Озвучка"
+                                            }, {
+                                                id: "dop-option-5",
+                                                label: "Титры"
+                                            }],
+                                            index: 3
+                                        };
+                                    },
+                                    template: `
+                                                                <div>     
+                                                                    <div class="accordion-content-timings">
+                                                                        <div class="accordion-panel-timings">
+                                                                            <h1 class="title">Сроки изготовления</h1>
+                                                                            <div class="accordion-panel-heading-timings" v-on:click="slideToggleTime">
+                                                                                <div class="select-prevent-timings">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-timings " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="time in product_time"
+                                                                                            v-bind:class="['item-timework']"
+                                                                                            v-bind:key="time"
+                                                                                            v-on:click="selectTimings"
+                                                                                        >{{ time }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                    <div class="set-radio-btn">
+                                                                        <h1 class="title">Количество камер</h1>
+                                                                        <ul class="wrap-radios">
+                                                                            <li 
+                                                                                v-for="radio in count_camera"
+                                                                                v-bind:class="['form_radio']">
+                                                                                <input v-if="radio.value === 'Одна'" v-bind:id=radio.id type="radio" name="count-camera" checked v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <input v-else v-bind:id=radio.id type="radio" name="count-camera" v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <label v-bind:for=radio.id>{{ radio.value }}</label>
+                                                                            </li>
+                                                                        </ul>                                                
+                                                                    </div>
+                                                                    <div class="accordion-content-sinema">
+                                                                        <h1 class="title">Время съёмки</h1>
+                                                                        <div class="accordion-panel-sinema">
+                                                                            <div class="accordion-panel-heading-sinema" v-on:click="slideToggleSinema">
+                                                                                <div class="select-prevent-sinema">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-sinema " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="delay in shooting"
+                                                                                            v-bind:class="['item-sinema']"
+                                                                                            v-bind:key="delay"
+                                                                                            v-on:click="selectSinema"
+                                                                                        >{{ delay }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                    <div class="accordion-content-time-study">
+                                                                        <h1 class="title">Хронометраж ролика</h1>
+                                                                        <div class="accordion-panel-time-study">
+                                                                            <div class="accordion-panel-heading-time-study" v-on:click="slideToggleTimeStudy">
+                                                                                <div class="select-prevent-time-study">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-time-study " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="study in time_study"
+                                                                                            v-bind:class="['item-study']"
+                                                                                            v-bind:key="study"
+                                                                                            v-on:click="selectStudy"
+                                                                                        >{{ study }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                    <div class="set_checkbox">
+                                                                        <h1 class="title">Дополнительно</h1>
+                                                                        <ul class="flex-box">
+                                                                            <li
+                                                                                v-for="dop in doption"
+                                                                                v-bind:class="['checkbox-wrap']"
+                                                                                v-bind:key="dop.id"
+                                                                            >
+                                                                                <input class="custom-checkbox" type="checkbox" v-bind:name=dop.id v-bind:id=dop.id v-bind:data-dop-id=dop.id v-on:click="checkedDopOpt" v-bind:value="dop.label">
+                                                                                <label class="custom-label" v-bind:for=dop.id ><p>{{ dop.label }}</p></label>
+                                                                            </li>                                                                        
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                `,
+                                    methods: {
+                                        slideToggleTime: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-timings").parent(".accordion-panel-timings").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-timings").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-timings").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        slideToggleSinema: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-sinema").parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        slideToggleTimeStudy: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-time-study").parent(".accordion-panel-time-study").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-time-study").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-time-study").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        checkCamera: function(event) {
+                                            $('input[name="count-sinema-event"]').attr("value", $(event.path[0]).val());
+                                            // console.log($(event.path[0]).val());
+                                        },
+                                        selectTimings: function(event) {
+                                            let accordionHeadingTimings = document.querySelector(
+                                                ".accordion-panel-heading-timings .select-prevent-timings"
+                                            );
+                                            accordionHeadingTimings.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingTimings.style = "color:#000";
+                                            document.querySelector("input[name='time-delay-event']").value =
+                                                accordionHeadingTimings.innerHTML;
+                                            $(".accordion-panel-heading-timings")
+                                                .parent(".accordion-panel-timings")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-timings").toggleClass("in").next().slideToggle();
+                                        },
+                                        selectSinema: function(event) {
+                                            let accordionHeadingSinema = document.querySelector(
+                                                ".accordion-panel-heading-sinema .select-prevent-sinema"
+                                            );
+                                            accordionHeadingSinema.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingSinema.style = "color:#000";
+                                            document.querySelector("input[name='shooting-time-event']").value =
+                                                accordionHeadingSinema.innerHTML;
+                                            $(".accordion-panel-heading-sinema")
+                                                .parent(".accordion-panel-sinema")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                        },
+                                        selectStudy: function(event) {
+                                            let accordionHeadingStudy = document.querySelector(
+                                                ".accordion-panel-heading-time-study .select-prevent-time-study"
+                                            );
+                                            accordionHeadingStudy.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingStudy.style = "color:#000";
+                                            document.querySelector("input[name='time-study-event']").value =
+                                                accordionHeadingStudy.innerHTML;
+                                            $(".accordion-panel-heading-time-study")
+                                                .parent(".accordion-panel-time-study")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-time-study").toggleClass("in").next().slideToggle();
+                                        },
+                                        checkedDopOpt: function(event) {
+                                            if (event.target.checked === true) {
+                                                $('input[type="hidden"][data-dop-id="' + event.target.dataset.dopId + '"]').attr('value', event.target.value);
+                                            } else {
+                                                $('input[type="hidden"][data-dop-id="' + event.target.dataset.dopId + '"]').attr('value', "Void");
+                                            }
+                                        }
+                                    }
+                                });
+
+                                Vue.component("tab-4", {
+                                    data: function() {
+                                        return {
+                                            count_camera: [{
+                                                id: "radio-1",
+                                                value: "Одна"
+                                            }, {
+                                                id: "radio-2",
+                                                value: "Две"
+                                            }, {
+                                                id: "radio-3",
+                                                value: "Три"
+                                            }, {
+                                                id: "radio-4",
+                                                value: "Четыре"
+                                            }],
+                                            shooting: ["1-2 часа", "3-4 часа"],
+                                            price_list: [{
+                                                    timings: "",
+                                                    countCamera: "Одна",
+                                                    sinema: "1-2 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '10 000 руб'
+                                                },
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Одна",
+                                                    sinema: "3-4 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '15 000 руб'
+                                                },
+
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Две",
+                                                    sinema: "1-2 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '15 000 руб'
+                                                },
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Две",
+                                                    sinema: "3-4 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '20 000 руб'
+                                                },
+
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Три",
+                                                    sinema: "1-2 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Три",
+                                                    sinema: "3-4 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '30 000 руб'
+                                                },
+
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Четыре",
+                                                    sinema: "1-2 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '30 000 руб'
+                                                },
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Четыре",
+                                                    sinema: "3-4 часа",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '40 000 руб'
+                                                }
+
+                                            ],
+                                            resultCalc: {
+                                                timings: "",
+                                                countCamera: "Одна",
+                                                sinema: "",
+                                                places: "",
+                                                typeSinema: ""
+                                            },
+                                            index: 4
+                                        };
+                                    },
+                                    template: `
+                                                                <div>
+                                                                    <div class="set-radio-btn">
+                                                                        <h1 class="title">Количество камер</h1>
+                                                                        <ul class="wrap-radios">
+                                                                            <li 
+                                                                                v-for="radio in count_camera"
+                                                                                v-bind:class="['form_radio']">
+                                                                                <input v-if="radio.value === 'Одна'" v-bind:id=radio.id type="radio" name="count-camera" checked v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <input v-else v-bind:id=radio.id type="radio" name="count-camera" v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <label v-bind:for=radio.id>{{ radio.value }}</label>
+                                                                            </li>  
+                                                                        </ul>                                                 
+                                                                    </div>
+                                                                    <div class="accordion-content-sinema">
+                                                                        <h1 class="title">Время съёмки</h1>
+                                                                        <div class="accordion-panel-sinema">
+                                                                            <div class="accordion-panel-heading-sinema" v-on:click="slideToggleSinema">
+                                                                                <div class="select-prevent-sinema">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-sinema" style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="delay in shooting"
+                                                                                            v-bind:class="['item-sinema']"
+                                                                                            v-bind:key="delay"
+                                                                                            v-on:click="selectSinema"
+                                                                                        >{{ delay }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                </div>
+                                                                `,
+                                    methods: {
+                                        slideToggleSinema: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-sinema").parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        checkCamera: function(event) {
+                                            $('input[name="count-sinema-event"]').attr("value", $(event.path[0]).val());
+                                            this.resultCalc.countCamera = $(event.path[0]).val();
+                                            // console.log($(event.path[0]).val());
+                                        },
+                                        selectSinema: function(event) {
+                                            let accordionHeadingSinema = document.querySelector(
+                                                ".accordion-panel-heading-sinema .select-prevent-sinema"
+                                            );
+                                            accordionHeadingSinema.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingSinema.style = "color:#000";
+                                            document.querySelector("input[name='shooting-time-event']").value =
+                                                accordionHeadingSinema.innerHTML;
+                                            this.resultCalc.sinema = accordionHeadingSinema.innerHTML;
+                                            $(".accordion-panel-heading-sinema")
+                                                .parent(".accordion-panel-sinema")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                        }
+                                    }
+                                });
+
+                                Vue.component("tab-5", {
+                                    data: function() {
+                                        return {
+                                            count_camera: [{
+                                                id: "radio-1",
+                                                value: "Одна"
+                                            }, {
+                                                id: "radio-2",
+                                                value: "Две"
+                                            }],
+                                            shooting: ["Выезд в роддом (0,5 - 1 час)", "Выезд в роддом и домой (1 - 2 часа)"],
+                                            price_list: [{
+                                                    timings: "",
+                                                    countCamera: "Одна",
+                                                    sinema: "Выезд в роддом (0,5 - 1 час)",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '7 000 руб'
+                                                },
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Одна",
+                                                    sinema: "Выезд в роддом и домой (1 - 2 часа)",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '10 000 руб'
+                                                },
+
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Две",
+                                                    sinema: "Выезд в роддом (0,5 - 1 час)",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '10 000 руб'
+                                                },
+                                                {
+                                                    timings: "",
+                                                    countCamera: "Две",
+                                                    sinema: "Выезд в роддом и домой (1 - 2 часа)",
+                                                    places: "",
+                                                    typeSinema: "",
+                                                    totalPrice: '15 000 руб'
+                                                }
+                                            ],
+                                            resultCalc: {
+                                                timings: "",
+                                                countCamera: "Одна",
+                                                sinema: "",
+                                                places: "",
+                                                typeSinema: ""
+                                            },
+                                            index: 5
+                                        };
+                                    },
+                                    template: `
+                                                                <div>     
+                                                                    <div class="set-radio-btn">
+                                                                        <h1 class="title">Количество камер</h1>
+                                                                        <ul class="wrap-radios">
+                                                                            <li 
+                                                                                v-for="radio in count_camera"
+                                                                                v-bind:class="['form_radio']">
+                                                                                <input v-if="radio.value === 'Одна'" v-bind:id=radio.id type="radio" name="count-camera" checked v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <input v-else v-bind:id=radio.id type="radio" name="count-camera" v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <label v-bind:for=radio.id>{{ radio.value }}</label>
+                                                                            </li>   
+                                                                        </ul>                                            
+                                                                    </div>
+                                                                    <div class="accordion-content-sinema">
+                                                                        <h1 class="title">Время съёмки</h1>
+                                                                        <div class="accordion-panel-sinema">
+                                                                            <div class="accordion-panel-heading-sinema" v-on:click="slideToggleSinema">
+                                                                                <div class="select-prevent-sinema">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-sinema " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="delay in shooting"
+                                                                                            v-bind:class="['item-sinema']"
+                                                                                            v-bind:key="delay"
+                                                                                            v-on:click="selectSinema"
+                                                                                        >{{ delay }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                </div>
+                                                                `,
+                                    methods: {
+                                        slideToggleSinema: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-sinema").parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        checkCamera: function(event) {
+                                            $('input[name="count-sinema-event"]').attr("value", $(event.path[0]).val());
+                                            this.resultCalc.countCamera = $(event.path[0]).val();
+                                            // console.log($(event.path[0]).val());
+                                        },
+                                        selectSinema: function(event) {
+                                            let accordionHeadingSinema = document.querySelector(
+                                                ".accordion-panel-heading-sinema .select-prevent-sinema"
+                                            );
+                                            accordionHeadingSinema.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingSinema.style = "color:#000";
+                                            document.querySelector("input[name='shooting-time-event']").value =
+                                                accordionHeadingSinema.innerHTML;
+                                            this.resultCalc.sinema = accordionHeadingSinema.innerHTML;
+                                            $(".accordion-panel-heading-sinema")
+                                                .parent(".accordion-panel-sinema")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                        }
+                                    }
+                                });
+
+                                Vue.component("tab-6", {
+                                    data: function() {
+                                        return {
+                                            product_time: ["В день мероприятия (SDE)", "1-2 месяца"],
+                                            count_camera: [{
+                                                id: "radio-1",
+                                                value: "Одна"
+                                            }, {
+                                                id: "radio-2",
+                                                value: "Две"
+                                            }],
+                                            shooting: ["1-2 часа", "3 и более часов"],
+                                            places: ["Детский сад", "Школа"],
+                                            price_list: [{
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "1-2 часа",
+                                                    places: "Детский сад",
+                                                    typeSinema: "",
+                                                    totalPrice: 'По договоренности'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "3 и более часов",
+                                                    places: "Детский сад",
+                                                    typeSinema: "",
+                                                    totalPrice: 'По договоренности'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "1-2 часа",
+                                                    places: "Детский сад",
+                                                    typeSinema: "",
+                                                    totalPrice: 'По договоренности'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "3 и более часов",
+                                                    places: "Детский сад",
+                                                    typeSinema: "",
+                                                    totalPrice: 'По договоренности'
+                                                },
+                                                {
+                                                    timings: "1-2 месяца",
+                                                    countCamera: "Одна",
+                                                    sinema: "1-2 часа",
+                                                    places: "Детский сад",
+                                                    typeSinema: "",
+                                                    totalPrice: '10 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяца",
+                                                    countCamera: "Одна",
+                                                    sinema: "3 и более часов",
+                                                    places: "Детский сад",
+                                                    typeSinema: "",
+                                                    totalPrice: '12 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяца",
+                                                    countCamera: "Две",
+                                                    sinema: "1-2 часа",
+                                                    places: "Детский сад",
+                                                    typeSinema: "",
+                                                    totalPrice: '12 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяца",
+                                                    countCamera: "Две",
+                                                    sinema: "3 и более часов",
+                                                    places: "Детский сад",
+                                                    typeSinema: "",
+                                                    totalPrice: '15 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "1-2 часа",
+                                                    places: "Школа",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Одна",
+                                                    sinema: "3 и более часов",
+                                                    places: "Школа",
+                                                    typeSinema: "",
+                                                    totalPrice: '30 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "1-2 часа",
+                                                    places: "Школа",
+                                                    typeSinema: "",
+                                                    totalPrice: '30 000 руб'
+                                                },
+                                                {
+                                                    timings: "В день мероприятия (SDE)",
+                                                    countCamera: "Две",
+                                                    sinema: "3 и более часов",
+                                                    places: "Школа",
+                                                    typeSinema: "",
+                                                    totalPrice: '35 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяца",
+                                                    countCamera: "Одна",
+                                                    sinema: "1-2 часа",
+                                                    places: "Школа",
+                                                    typeSinema: "",
+                                                    totalPrice: '20 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяца",
+                                                    countCamera: "Одна",
+                                                    sinema: "3 и более часов",
+                                                    places: "Школа",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяца",
+                                                    countCamera: "Две",
+                                                    sinema: "1-2 часа",
+                                                    places: "Школа",
+                                                    typeSinema: "",
+                                                    totalPrice: '25 000 руб'
+                                                },
+                                                {
+                                                    timings: "1-2 месяца",
+                                                    countCamera: "Две",
+                                                    sinema: "3 и более часов",
+                                                    places: "Школа",
+                                                    typeSinema: "",
+                                                    totalPrice: '30 000 руб'
+                                                }
+                                            ],
+                                            resultCalc: {
+                                                timings: "",
+                                                countCamera: "Одна",
+                                                sinema: "",
+                                                places: "",
+                                                typeSinema: ""
+                                            },
+                                            index: 6
+                                        };
+                                    },
+                                    template: `
+                                                                <div>     
+                                                                    <div class="accordion-content-places">
+                                                                        <div class="accordion-panel-places">
+                                                                            <h1 class="title">Место</h1>
+                                                                            <div class="accordion-panel-heading-places" v-on:click="slideTogglePlace">
+                                                                                <div class="select-prevent-places">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-places " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="place in places"
+                                                                                            v-bind:class="['item-timework']"
+                                                                                            v-on:click="selectPlaces"
+                                                                                        >{{ place }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                    <div class="accordion-content-timings">
+                                                                        <div class="accordion-panel-timings">
+                                                                            <h1 class="title">Сроки изготовления</h1>
+                                                                            <div class="accordion-panel-heading-timings" v-on:click="slideToggleTime">
+                                                                                <div class="select-prevent-timings">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-timings " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="time in product_time"
+                                                                                            v-bind:class="['item-timework']"
+                                                                                            v-bind:key="time"
+                                                                                            v-on:click="selectTimings"
+                                                                                        >{{ time }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                    <div class="set-radio-btn">
+                                                                        <h1 class="title">Количество камер</h1>
+                                                                        <ul class="wrap-radios">
+                                                                            <li 
+                                                                                v-for="radio in count_camera"
+                                                                                v-bind:class="['form_radio']">
+                                                                                <input v-if="radio.value === 'Одна'" v-bind:id=radio.id type="radio" name="count-camera" checked v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <input v-else v-bind:id=radio.id type="radio" name="count-camera" v-bind:value=radio.value  v-on:click="checkCamera">
+                                                                                <label v-bind:for=radio.id>{{ radio.value }}</label>
+                                                                            </li>     
+
+                                                                        </ul>                                             
+                                                                    </div>
+                                                                    <div class="accordion-content-sinema">
+                                                                        <h1 class="title">Время съёмки</h1>
+                                                                        <div class="accordion-panel-sinema">
+                                                                            <div class="accordion-panel-heading-sinema" v-on:click="slideToggleSinema">
+                                                                                <div class="select-prevent-sinema">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-sinema " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="delay in shooting"
+                                                                                            v-bind:class="['item-sinema']"
+                                                                                            v-bind:key="delay"
+                                                                                            v-on:click="selectSinema"
+                                                                                        >{{ delay }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                </div>
+                                                                `,
+                                    methods: {
+                                        slideToggleTime: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-timings").parent(".accordion-panel-timings").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-timings").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-timings").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        slideToggleSinema: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-sinema").parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        slideTogglePlace: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-places").parent(".accordion-panel-places").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-places").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-places").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        checkCamera: function(event) {
+                                            // 																console.log($(event.path[0]));
+                                            //                                                                 $('input[name="count-sinema-event"]').attr("value",$(event.path[0]).val());
+                                            //                                                                 this.resultCalc.countCamera = $(event.path[0]).val();
+                                            this.resultCalc.countCamera = $(event.path[0]).val();
+                                            // console.log($(event.path[0]).val());
+                                        },
+                                        selectTimings: function(event) {
+                                            let accordionHeadingTimings = document.querySelector(
+                                                ".accordion-panel-heading-timings .select-prevent-timings"
+                                            );
+                                            accordionHeadingTimings.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingTimings.style = "color:#000";
+                                            document.querySelector("input[name='time-delay-event']").value =
+                                                accordionHeadingTimings.innerHTML;
+                                            this.resultCalc.timings = accordionHeadingTimings.innerHTML;
+                                            $(".accordion-panel-heading-timings")
+                                                .parent(".accordion-panel-timings")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-timings").toggleClass("in").next().slideToggle();
+                                        },
+                                        selectSinema: function(event) {
+                                            let accordionHeadingSinema = document.querySelector(
+                                                ".accordion-panel-heading-sinema .select-prevent-sinema"
+                                            );
+                                            accordionHeadingSinema.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingSinema.style = "color:#000";
+                                            document.querySelector("input[name='shooting-time-event']").value =
+                                                accordionHeadingSinema.innerHTML;
+                                            this.resultCalc.sinema = accordionHeadingSinema.innerHTML;
+                                            $(".accordion-panel-heading-sinema")
+                                                .parent(".accordion-panel-sinema")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                        },
+                                        selectPlaces: function(event) {
+                                            let accordionHeadingPlaces = document.querySelector(
+                                                ".accordion-panel-heading-places .select-prevent-places"
+                                            );
+                                            accordionHeadingPlaces.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingPlaces.style = "color:#000";
+                                            document.querySelector("input[name='places-event']").value =
+                                                accordionHeadingPlaces.innerHTML;
+                                            this.resultCalc.places = accordionHeadingPlaces.innerHTML;
+                                            $(".accordion-panel-heading-places")
+                                                .parent(".accordion-panel-places")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-places").toggleClass("in").next().slideToggle();
+                                        }
+                                    }
+                                });
+
+                                Vue.component("tab-7", {
+                                    data: function() {
+                                        return {
+                                            type_sinema: ["Без сценария", "Со сценарием"],
+                                            shooting: ["1 часа (без интервью)", "2 часа (с интервью)"],
+                                            price_list: [{
+                                                    timings: "",
+                                                    countCamera: "",
+                                                    sinema: "1 часа (без интервью)",
+                                                    places: "",
+                                                    typeSinema: "Без сценария",
+                                                    totalPrice: '7 000 руб'
+                                                },
+                                                {
+                                                    timings: "",
+                                                    countCamera: "",
+                                                    sinema: "1 часа (без интервью)",
+                                                    places: "",
+                                                    typeSinema: "Со сценарием",
+                                                    totalPrice: '10 000 руб'
+                                                },
+
+                                                {
+                                                    timings: "",
+                                                    countCamera: "",
+                                                    sinema: "2 часа (с интервью)",
+                                                    places: "",
+                                                    typeSinema: "Без сценария",
+                                                    totalPrice: '12 000 руб'
+                                                },
+                                                {
+                                                    timings: "",
+                                                    countCamera: "",
+                                                    sinema: "2 часа (с интервью)",
+                                                    places: "",
+                                                    typeSinema: "Со сценарием",
+                                                    totalPrice: '15 000 руб'
+                                                },
+                                            ],
+                                            resultCalc: {
+                                                timings: "",
+                                                countCamera: "",
+                                                sinema: "",
+                                                places: "",
+                                                typeSinema: ""
+                                            },
+                                            index: 7
+                                        };
+                                    },
+                                    template: `
+                                                                <div>     
+                                                                    <div class="accordion-content-type-sinema">
+                                                                        <div class="accordion-panel-type-sinema">
+                                                                            <h1 class="title">Тип съёмки</h1>
+                                                                            <div class="accordion-panel-heading-type-sinema" v-on:click="slideToggleTypeSinema">
+                                                                                <div class="select-prevent-type-sinema">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-type-sinema " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="tsin in type_sinema"
+                                                                                            v-bind:class="['item-timework']"
+                                                                                            v-on:click="selectTypeSinema"
+                                                                                        >{{ tsin }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>                                                               
+                                                                    <div class="accordion-content-sinema">
+                                                                        <h1 class="title">Время съёмки</h1>
+                                                                        <div class="accordion-panel-sinema">
+                                                                            <div class="accordion-panel-heading-sinema" v-on:click="slideToggleSinema">
+                                                                                <div class="select-prevent-sinema">
+                                                                                    Выбрать
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-panel-collapse-sinema " style="display:none;">
+                                                                                    <ul>                                                
+                                                                                        <li
+                                                                                            v-for="delay in shooting"
+                                                                                            v-bind:class="['item-sinema']"
+                                                                                            v-bind:key="delay"
+                                                                                            v-on:click="selectSinema"
+                                                                                        >{{ delay }}</li>
+                                                                                    </ul>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>                                                                
+                                                                </div>
+                                                                `,
+                                    methods: {
+                                        slideToggleSinema: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-sinema").parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-sinema").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        slideToggleTypeSinema: function(event) {
+                                            $(event.target).parent(".accordion-panel-heading-type-sinema").parent(".accordion-panel-type-sinema").toggleClass("focus");
+                                            $(event.target).parent(".accordion-panel-heading-type-sinema").toggleClass("in").next().slideToggle();
+                                            $(event.target).parent(".accordion-panel-type-sinema").toggleClass("focus");
+                                            $(event.target).toggleClass("in").next().slideToggle();
+                                        },
+                                        selectSinema: function(event) {
+                                            let accordionHeadingSinema = document.querySelector(
+                                                ".accordion-panel-heading-sinema .select-prevent-sinema"
+                                            );
+                                            accordionHeadingSinema.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingSinema.style = "color:#000";
+                                            document.querySelector("input[name='shooting-time-event']").value =
+                                                accordionHeadingSinema.innerHTML;
+                                            this.resultCalc.sinema = accordionHeadingSinema.innerHTML;
+                                            $(".accordion-panel-heading-sinema")
+                                                .parent(".accordion-panel-sinema")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-sinema").toggleClass("in").next().slideToggle();
+                                        },
+                                        selectTypeSinema: function(event) {
+                                            let accordionHeadingTypeSinema = document.querySelector(
+                                                ".accordion-panel-heading-type-sinema .select-prevent-type-sinema"
+                                            );
+                                            accordionHeadingTypeSinema.innerHTML = event.currentTarget.innerHTML;
+                                            accordionHeadingTypeSinema.style = "color:#000";
+                                            document.querySelector("input[name='type-sinema-event']").value =
+                                                accordionHeadingTypeSinema.innerHTML;
+                                            this.resultCalc.typeSinema = accordionHeadingTypeSinema.innerHTML;
+                                            $(".accordion-panel-heading-type-sinema")
+                                                .parent(".accordion-panel-type-sinema")
+                                                .toggleClass("focus");
+                                            $(".accordion-panel-heading-type-sinema").toggleClass("in").next().slideToggle();
+                                        }
+                                    }
+                                });
+
+                                new Vue({
+                                    el: "#dynamic-component-demo",
+                                    data: {
+                                        currentTab: {
+                                            index: 0,
+                                            name: "Выбрать"
+                                        },
+                                        tabs: [{
+                                                index: 1,
+                                                name: "Свадьба"
+                                            },
+                                            {
+                                                index: 2,
+                                                name: "Корпоратив / День рождения"
+                                            },
+                                            {
+                                                index: 3,
+                                                name: "Промо / рекламный ролик"
+                                            },
+                                            {
+                                                index: 4,
+                                                name: "Съёмка концерта"
+                                            },
+                                            {
+                                                index: 5,
+                                                name: "Выписка из роддома"
+                                            },
+                                            {
+                                                index: 6,
+                                                name: "Выпускной  детский сад / школа"
+                                            },
+                                            {
+                                                index: 7,
+                                                name: "Love Story"
+                                            }
+                                        ],
+                                        responPrice: {
+                                            isValid: false,
+                                            text: "Для подсчёта стоимости, должны быть заполнены все поля",
+                                        }
+                                    },
+                                    methods: {
+                                        handlerDisabledSub: function(event) {
+                                            // console.log(event);
+
+                                            if (event.path[0].checked === false) {
+                                                document.querySelectorAll(".wrapper-right form button.submit").forEach((item) => {
+                                                    item.setAttribute('disabled', 'true');
+                                                    item.style.cursor = "not-allowed";
+                                                })
+                                            } else {
+                                                document.querySelectorAll(".wrapper-right form button.submit").forEach((item) => {
+                                                    item.removeAttribute('disabled');
+                                                    item.style.cursor = "pointer";
+                                                })
+                                            }
+
+                                        },
+                                        handlerPrice: function(event) {
+                                            let currentChild = this.$children.find((child) => {
+                                                return child.index === this.currentTab.index
+                                            });
+
+                                            let childPriceList = currentChild.price_list;
+                                            console.log(currentChild);
+                                            let childResultPrice = currentChild.resultCalc;
+                                            if (this.currentTab.index === 3) {
+                                                this.responPrice.isValid = false;
+                                                this.responPrice.text = "По договорённости";
+                                                document.querySelector("input[name='price']").value = this.responPrice.text;
+                                            } else {
+                                                childPriceList.forEach(element => {
+                                                    if (childResultPrice.timings == element.timings & childResultPrice.countCamera == element.countCamera & childResultPrice.sinema === element.sinema & childResultPrice.places == element.places & childResultPrice.typeSinema == element.typeSinema) {
+                                                        this.responPrice.isValid = true;
+                                                        this.responPrice.text = element.totalPrice;
+                                                        document.querySelector("input[name='price']").value = this.responPrice.text;
+                                                    }
+                                                });
+                                            }
+                                        },
+                                    },
+                                    computed: {
+                                        currentTabComponent: function() {
+                                            return "tab-" + this.currentTab.index;
+                                        }
+                                    }
+                                });
+                            </script>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="footer">
-        <p>© National Geographic 2024</p>
-    </div>
-    <div class="chat">
-        <h3>Chat with us</h3>
-        <p>How can we help you?</p>
-    </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <h2 class="title">Мои клиенты</h2>            <div class="clients_slider">
+                <div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/010.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/002.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/009.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/011.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/s7.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/003.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/005.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/001.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/004.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/007.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/006.jpg" alt="">
+					</div>	
+				</div><div class="slide">
+					<div class="slide_wr">
+						<img src="https://kurmanov.eu/wp-content/uploads/2021/05/manilla.jpg" alt="">
+					</div>	
+				</div>
+            </div>
+        </div>
+    </section>
+    </main>
+<footer id="jacorContact">
+	<div class="container d-flex justify-content-between">
+		<div class="row">
+			<div class="col-12 col-lg-4">
+				<div class="footer_img d-flex justify-content-center justify-content-lg-start">
+					<a href="https://kurmanov.eu/ru/home-ru">
+						<img src="https://kurmanov.eu/wp-content/themes/laika/src/icons/logoup.svg" alt="" class="img-fluid">					</a>
+				</div>
+			</div>
+			<div class="col-12 footer-mobile justify-content-center">
+				<!--                 <ul>
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Рассчитать стоимость</a></li>
+                </ul> -->
+			</div>
+			<div class="col-12 col-lg-4 social-ord">
+				<div class="social">
+					<ul class="d-flex justify-content-center">
+						<li>
+							<a href="https://www.instagram.com/alex_kurmanov/" target="_blank">
+								<svg class="social-icon">
+									<use href="https://kurmanov.eu/wp-content/themes/laika/src/icons/sprite.svg#instagram-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://vk.com/alex_kurmanov" target="_blank">
+								<svg class="social-icon">
+									<use href="https://kurmanov.eu/wp-content/themes/laika/src/icons/sprite.svg#vk-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://vimeo.com/user30852844/videos" target="_blank">
+								<svg class="social-icon">
+									<use href="https://kurmanov.eu/wp-content/themes/laika/src/icons/sprite.svg#vimeo-icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-lg-4">
+				<div class="d-flex flex-column align-items-lg-end align-items-center footer-phone">
+					<a class="num-ltr" href="tel:+972509669545">+972 50 966 9545</a>
+					<a href="mailto:k-sash1983@yandex.ru">k-sash1983@yandex.ru</a>
+				</div>
+			</div>
+		</div>
+	</div>
+			<div class="total-modal hidden">
+			<div class="modal-container">
+				<div class="sign-up" style="display: none;">
+					<h1 class="title">Обратный звонок</h1>
+					<div class="description">
+						Оставьте свой номер телефона и я обязательно вам перезвоню.
+					</div>
+					
+<div class="wpcf7 no-js" id="wpcf7-f14-o1" lang="ru-RU" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/ru/home-ru/#wpcf7-f14-o1" method="post" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="14" />
+<input type="hidden" name="_wpcf7_version" value="5.9.3" />
+<input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f14-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<div class="wrapp-form-callback">
+<label class="place-input">
+                                <span class="wpcf7-form-control-wrap" data-name="full-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required total-focus-label" aria-required="true" aria-invalid="false" value="" type="text" name="full-name" /></span>
+                                <div class="place_holder full-name">Ваше имя</div>
+                            </label>
+                            <label class="place-input" id="tel">
+                             <span class="wpcf7-form-control-wrap" data-name="tel"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel total-focus-label" id="tel" aria-required="true" aria-invalid="false" value="" type="tel" name="tel" /></span> 
+                             <div class="place_holder email">Телефон</div>
+                            </label>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" name="checkbox-passport-2" id="checkbox-passport-2" checked="checked" class="custom-checkbox"> 
+                                <label for="checkbox-passport-2" class="custom-label"><p>Согласен на обработку персональных данных</p></label>
+                            </div>
+<span class="wpcf7-form-control-submit">
+                                 <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Отправить" />
+</span>
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+					<a href="#closeModal1" class="close-modal">
+						<img src="https://kurmanov.eu/wp-content/themes/laika/src/icons/close-modal.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript" src="https://kurmanov.eu/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.3" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/kurmanov.eu\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://kurmanov.eu/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.3" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://kurmanov.eu/wp-content/themes/laika/src/js/slick.min.js?ver=210421-4" id="slick-js"></script>
+<script type="text/javascript" src="https://kurmanov.eu/wp-content/themes/laika/src/js/jquery.maskedinput-1.3.js?ver=210421-5" id="jquery.maskedinput-js"></script>
+<script type="text/javascript" src="https://kurmanov.eu/wp-content/themes/laika/src/js/main.js?ver=210421-14" id="main-js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function(d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter38713430 = new Ya.Metrika({
+					id: 38713430,
+					clickmap: true,
+					trackLinks: true,
+					accurateTrackBounce: true
+				});
+			} catch (e) {}
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function() {
+				n.parentNode.insertBefore(s, n);
+			};
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else {
+			f();
+		}
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+	<div><img src="https://mc.yandex.ru/watch/38713430" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
+	<script>
+		jQuery(document).ready(function($) {
+			$(".wpcf7-tel").inputmask("+7(999)999-99-99");
+		});
+	</script>
 </body>
+
 </html>
